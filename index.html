@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netratvshaala — Where India's Future is Forged</title>
+<meta name="description" content="Netratvshaala is a leadership and innovation platform working across governance, grassroots entrepreneurship, and emerging technologies. We partner with governments, institutions, and ecosystem leaders to build solutions that translate into real-world impact.">
+
+<!-- Social / SEO -->
+<meta property="og:title" content="Netratvshaala — Where India's Future is Forged">
+<meta property="og:description" content="A leadership and innovation platform working across governance, grassroots entrepreneurship, and emerging technologies.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/website/download.jpeg">
+<link rel="icon" type="image/jpeg" href="assets/website/download.jpeg">
+
+<!-- Fonts (optimized) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   NETRATVSHAALA — Single-Page Inlined Design System
+   Emerald & Gold — Premium, Dynamic, Modern
+   ============================================================ */
+
+:root {
+  --g:#0B1F1A; --gd:#071512; --gm:#1A6B54; --ga:#D4A843;
+  --gl:#FFF8E7; --gold:#C9963A; --goldl:#FAF0D4;
+  --cream:#F4F7F5; --ink:#0B1F1A; --ink2:#1C3B32; --ink3:#5A8678;
+  --border:rgba(11,31,26,0.10); --w:#fff;
+  --accent2:#2DD4A8; --accent2l:rgba(45,212,168,0.12);
+  --glow:rgba(212,168,67,0.35);
+  --glass:rgba(11,31,26,0.65); --glass-border:rgba(212,168,67,0.18);
+  --gradient-hero:linear-gradient(135deg,#071512 0%,#0B1F1A 40%,#143D30 100%);
+  --gradient-dark:linear-gradient(160deg,#071512 0%,#0B1F1A 60%,#071512 100%);
+  --gradient-accent:linear-gradient(135deg,#D4A843 0%,#E8C76A 50%,#D4A843 100%);
+  --radius:12px; --radius-sm:8px; --radius-lg:20px;
+  --shadow-sm:0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md:0 8px 32px rgba(0,0,0,0.12);
+  --shadow-lg:0 16px 48px rgba(0,0,0,0.18);
+  --shadow-glow:0 0 40px rgba(212,168,67,0.15);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'DM Sans','Outfit',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+ul,ol{list-style:none}
+img{max-width:100%;height:auto;display:block}
+button{cursor:pointer;font-family:'DM Sans',sans-serif}
+::selection{background:rgba(212,168,67,0.3);color:#0B1F1A}
+
+/* Perf: defer rendering of offscreen sections */
+section{content-visibility:auto;contain-intrinsic-size:auto 800px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(7,21,18,0.88);backdrop-filter:blur(20px) saturate(1.6);-webkit-backdrop-filter:blur(20px) saturate(1.6);padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(212,168,67,0.12);transition:background .4s,box-shadow .4s,height .3s}
+nav.scrolled{background:rgba(7,21,18,0.95);box-shadow:0 4px 32px rgba(0,0,0,0.3);height:64px}
+.nav-left{display:flex;align-items:center}
+.nav-logo-container{display:flex;align-items:center;gap:14px}
+.nav-logo-text{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#fff;letter-spacing:.5px;transition:color .3s,transform .3s}
+.nav-logo-container:hover .nav-logo-text{color:var(--ga);transform:translateX(2px)}
+.nav-logo-img{height:40px;width:auto;transition:transform .3s}
+.nav-logo-img:hover{transform:scale(1.05)}
+.nav-links{display:flex;gap:36px;align-items:center}
+.nav-links a{color:rgba(255,255,255,0.55);font-size:13px;cursor:pointer;transition:color .3s;font-weight:400;position:relative;letter-spacing:.5px;text-transform:uppercase}
+.nav-links a::after{content:'';position:absolute;bottom:-6px;left:50%;width:0;height:2px;background:var(--gradient-accent);transition:width .35s ease,left .35s ease;border-radius:2px}
+.nav-links a:hover{color:var(--ga)}
+.nav-links a:hover::after{width:100%;left:0}
+.nav-links a.active{color:var(--ga)}
+.nav-links a.active::after{width:100%;left:0}
+.nav-cta{background:var(--gradient-accent);color:#0B1F1A;padding:10px 24px;border-radius:var(--radius);font-size:13px;font-weight:600;border:none;font-family:'DM Sans',sans-serif;letter-spacing:.3px;transition:transform .3s,box-shadow .3s;box-shadow:0 4px 16px rgba(212,168,67,0.25)}
+.nav-cta:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 8px 28px rgba(212,168,67,0.4)}
+
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;flex-direction:column;gap:5px;z-index:1100}
+.nav-hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:all .4s cubic-bezier(.23,1,.32,1)}
+.nav-hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nav-hamburger.active span:nth-child(2){opacity:0;transform:scaleX(0)}
+.nav-hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+.mobile-nav{position:fixed;inset:0;background:rgba(7,21,18,0.96);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);z-index:1050;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;opacity:0;visibility:hidden;transition:opacity .5s cubic-bezier(.23,1,.32,1),visibility .5s}
+.mobile-nav.open{opacity:1;visibility:visible}
+.mobile-nav a{font-family:'Playfair Display',serif;font-size:32px;color:rgba(255,255,255,0.6);padding:18px 0;transition:color .3s,transform .3s}
+.mobile-nav a:hover{color:var(--ga);transform:translateX(8px)}
+
+/* HERO */
+.hero{min-height:100vh;background:#071512;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 80%,rgba(212,168,67,0.07) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 80% 20%,rgba(45,212,168,0.05) 0%,transparent 60%);z-index:1;animation:heroGlow 8s ease-in-out infinite alternate}
+@keyframes heroGlow{0%{opacity:.6}100%{opacity:1}}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1400&q=80');background-size:cover;background-position:center top;opacity:.08;filter:grayscale(40%) sepia(20%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(7,21,18,0.40) 0%,rgba(11,31,26,0.50) 50%,rgba(7,21,18,0.97) 100%);z-index:1}
+.hero-content{position:relative;padding:0 80px;max-width:920px;z-index:2}
+.hero-eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:32px}
+.hero-eyebrow-line{width:48px;height:2px;background:var(--gradient-accent);border-radius:2px}
+.hero-eyebrow span{font-family:'DM Mono',monospace;font-size:11px;color:var(--ga);letter-spacing:3px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(44px,6vw,76px);font-weight:700;color:#fff;line-height:1.08;margin-bottom:28px}
+.hero h1 em{color:transparent;background:var(--gradient-accent);-webkit-background-clip:text;background-clip:text;font-style:italic}
+.hero-sub{font-size:17px;color:rgba(255,255,255,0.55);line-height:1.8;max-width:560px;margin-bottom:52px;font-weight:300}
+.hero-btns{display:flex;gap:16px;margin-bottom:80px;flex-wrap:wrap}
+.btn-primary{background:var(--gradient-accent);color:#0B1F1A;padding:15px 32px;border-radius:var(--radius);font-size:14px;font-weight:600;border:none;font-family:'DM Sans',sans-serif;letter-spacing:.3px;transition:transform .3s,box-shadow .3s;display:inline-block;box-shadow:0 4px 20px rgba(212,168,67,0.3)}
+.btn-primary:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 8px 32px rgba(212,168,67,0.45)}
+.btn-ghost{background:transparent;color:#fff;padding:15px 32px;border-radius:var(--radius);font-size:14px;border:1px solid rgba(212,168,67,0.3);font-family:'DM Sans',sans-serif;transition:border-color .3s,color .3s,background .3s;display:inline-block}
+.btn-ghost:hover{border-color:var(--ga);color:var(--ga);background:rgba(212,168,67,0.06)}
+.hero-stats{display:flex;gap:48px;border-top:1px solid rgba(212,168,67,0.12);padding-top:44px;flex-wrap:wrap}
+.hstat-n{font-family:'Playfair Display',serif;font-size:38px;font-weight:700;background:var(--gradient-accent);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.hstat-l{font-size:12px;color:rgba(255,255,255,0.4);margin-top:8px;font-weight:300;letter-spacing:.3px}
+
+/* SECTION BASICS */
+section{padding:100px 80px}
+.section-eyebrow{font-family:'DM Mono',monospace;font-size:11px;color:var(--ga);letter-spacing:3px;margin-bottom:18px;display:block;text-transform:uppercase}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(32px,3.5vw,50px);font-weight:700;color:var(--ink);line-height:1.12;margin-bottom:24px}
+.section-title.light{color:#fff}
+.section-body{font-size:16px;color:var(--ink2);line-height:1.85;max-width:640px;font-weight:300}
+.section-body.light{color:rgba(255,255,255,0.6)}
+
+/* ABOUT */
+.about-section{background:var(--w)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;border-radius:var(--radius-lg);display:block;aspect-ratio:4/5;object-fit:cover;box-shadow:var(--shadow-lg);transition:transform .5s}
+.about-img:hover img{transform:scale(1.02)}
+.about-img-badge{position:absolute;bottom:-20px;right:-20px;background:var(--g);color:#fff;padding:22px 28px;border-radius:var(--radius);font-family:'Playfair Display',serif;box-shadow:var(--shadow-md);border:1px solid rgba(212,168,67,0.15)}
+.about-img-badge .badge-n{font-size:34px;font-weight:700;background:var(--gradient-accent);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.about-img-badge .badge-l{font-size:12px;color:rgba(255,255,255,0.45);margin-top:6px}
+.about-text blockquote{border-left:3px solid var(--ga);padding:22px 28px;background:linear-gradient(135deg,rgba(212,168,67,0.06) 0%,rgba(212,168,67,0.02) 100%);border-radius:0 var(--radius) var(--radius) 0;margin:32px 0;backdrop-filter:blur(4px)}
+.about-text blockquote p{font-family:'Playfair Display',serif;font-size:18px;color:#0B1F1A;font-style:italic;line-height:1.6}
+
+/* THEORY OF CHANGE */
+.toc-section{background:var(--gradient-hero);position:relative;overflow:hidden}
+.toc-section::before{content:'';position:absolute;top:0;right:0;width:400px;height:400px;background:radial-gradient(circle,rgba(212,168,67,0.06) 0%,transparent 70%);border-radius:50%}
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:60px}
+.toc-steps{display:flex;flex-direction:column;gap:0}
+.toc-step{display:flex;gap:24px;padding:30px 0;border-bottom:1px solid rgba(255,255,255,0.06);cursor:pointer;transition:all .3s}
+.toc-step:last-child{border-bottom:none}
+.toc-step:hover{padding-left:8px}
+.toc-step:hover .toc-step-num{background:var(--gradient-accent);color:#0B1F1A;box-shadow:0 0 20px rgba(212,168,67,0.3)}
+.toc-step-num{width:44px;height:44px;border-radius:50%;border:1px solid rgba(212,168,67,0.3);color:var(--ga);font-family:'DM Mono',monospace;font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
+.toc-step-title{font-size:16px;font-weight:500;color:#fff;margin-bottom:8px}
+.toc-step-body{font-size:14px;color:rgba(255,255,255,0.45);line-height:1.7;font-weight:300}
+.toc-visual{position:relative}
+.toc-visual img{width:100%;border-radius:var(--radius-lg);object-fit:cover;aspect-ratio:4/5;opacity:.65;transition:opacity .5s}
+.toc-visual:hover img{opacity:.8}
+.toc-visual-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,21,18,0.95) 0%,rgba(11,31,26,0.3) 60%,transparent 100%);border-radius:var(--radius-lg)}
+.toc-visual-text{position:absolute;bottom:32px;left:32px;right:32px}
+.toc-visual-text h3{font-family:'Playfair Display',serif;color:#fff;font-size:22px;font-style:italic;line-height:1.4}
+.toc-visual-text p{color:rgba(255,255,255,0.45);font-size:13px;margin-top:10px;font-weight:300}
+
+/* JOURNEY */
+.journey-section{background:var(--cream)}
+.timeline-outer{margin-top:60px;position:relative}
+.timeline-outer::before{content:'';position:absolute;left:108px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--ga),rgba(212,168,67,0.06));border-radius:2px}
+.t-row{display:flex;gap:48px;margin-bottom:56px;align-items:flex-start}
+.t-year-col{width:80px;text-align:right;padding-top:2px;flex-shrink:0}
+.t-year{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;color:var(--ga)}
+.t-dot-col{width:40px;flex-shrink:0;display:flex;justify-content:center;padding-top:6px;position:relative;z-index:1}
+.t-dot{width:14px;height:14px;border-radius:50%;background:var(--gradient-accent);border:3px solid var(--cream);box-shadow:0 0 12px rgba(212,168,67,0.3);transition:transform .3s,box-shadow .3s}
+.t-row:hover .t-dot{transform:scale(1.3);box-shadow:0 0 20px rgba(212,168,67,0.5)}
+.t-content{flex:1}
+.t-title{font-size:17px;font-weight:500;color:var(--ink);margin-bottom:8px}
+.t-body{font-size:14px;color:var(--ink2);line-height:1.75;font-weight:300;margin-bottom:12px}
+.t-tag{display:inline-block;font-size:11px;padding:4px 14px;border-radius:20px;font-family:'DM Mono',monospace;letter-spacing:.5px;transition:transform .2s;background:rgba(11,31,26,0.07);color:var(--gm)}
+.t-tag:hover{transform:scale(1.05);background:rgba(11,31,26,0.1)}
+.t-img{width:120px;flex-shrink:0}
+.t-img img{width:100%;border-radius:var(--radius);aspect-ratio:3/2;object-fit:cover}
+
+/* IMPACT */
+.impact-section{background:var(--gradient-dark);position:relative;overflow:hidden}
+.impact-section::before{content:'';position:absolute;top:50%;left:50%;width:800px;height:800px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(212,168,67,0.04) 0%,transparent 60%);border-radius:50%}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.04);border-radius:var(--radius-lg);overflow:hidden;margin-top:60px;position:relative;z-index:1}
+.impact-card{background:rgba(255,255,255,0.02);padding:40px 28px;transition:background .4s,transform .3s;position:relative}
+.impact-card:hover{background:rgba(212,168,67,0.06);transform:translateY(-2px)}
+.impact-n{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;background:var(--gradient-accent);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;margin-bottom:10px}
+.impact-label{font-size:14px;color:rgba(255,255,255,0.45);line-height:1.5;font-weight:300}
+.impact-detail{font-size:12px;color:rgba(255,255,255,0.22);margin-top:8px;font-weight:300}
+.impact-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:60px;position:relative;z-index:1}
+.impact-photo{position:relative;border-radius:var(--radius);overflow:hidden}
+.impact-photo img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;filter:brightness(0.65) grayscale(20%);transition:all .5s cubic-bezier(.23,1,.32,1)}
+.impact-photo:hover img{filter:brightness(0.45) grayscale(0%);transform:scale(1.05)}
+.impact-photo-label{position:absolute;bottom:0;left:0;right:0;padding:24px 18px 16px;background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,transparent 100%)}
+.impact-photo-label p{font-size:13px;color:#fff;font-weight:400}
+.impact-photo-label span{font-size:11px;color:var(--ga);font-family:'DM Mono',monospace;letter-spacing:1px}
+
+/* PROGRAMS */
+.programs-section{background:var(--w)}
+.programs-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-bottom:72px}
+.prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border-radius:var(--radius-lg);overflow:hidden}
+.prog-card{background:var(--w);padding:40px 36px;transition:background .3s,transform .3s;position:relative}
+.prog-card:hover{background:var(--cream);transform:translateY(-2px)}
+.prog-num{font-family:'DM Mono',monospace;font-size:11px;color:var(--ga);letter-spacing:1.5px;margin-bottom:14px}
+.prog-name{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--ink);margin-bottom:10px;line-height:1.3}
+.prog-tag{font-size:12px;color:var(--gm);margin-bottom:18px;font-weight:400}
+.prog-body{font-size:14px;color:var(--ink2);line-height:1.75;font-weight:300;margin-bottom:20px}
+.prog-outcomes{list-style:none}
+.prog-outcomes li{font-size:13px;color:var(--ink3);padding:6px 0;border-top:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;transition:padding-left .2s}
+.prog-outcomes li:hover{padding-left:4px}
+.prog-outcomes li::before{content:'→';color:var(--ga);flex-shrink:0;font-size:12px;margin-top:1px}
+.prog-highlight{background:var(--gradient-hero);position:relative}
+.prog-highlight::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 0%,rgba(212,168,67,0.08) 0%,transparent 60%);pointer-events:none}
+.prog-highlight .prog-num{color:var(--ga)}
+.prog-highlight .prog-name{color:#fff}
+.prog-highlight .prog-tag{color:rgba(255,255,255,0.45)}
+.prog-highlight .prog-body{color:rgba(255,255,255,0.55)}
+.prog-highlight .prog-outcomes li{color:rgba(255,255,255,0.45);border-top-color:rgba(255,255,255,0.06)}
+.prog-highlight .prog-outcomes li::before{color:var(--ga)}
+.prog-highlight:hover{background:var(--gradient-hero);transform:none}
+.prog-active-badge{position:absolute;top:18px;right:18px;background:var(--gradient-accent);color:#0B1F1A;font-size:10px;padding:4px 14px;border-radius:20px;font-family:'DM Mono',monospace;letter-spacing:.5px;font-weight:600;box-shadow:0 2px 12px rgba(212,168,67,0.3)}
+
+/* PARTNERS */
+.partners-section{background:var(--cream)}
+.partners-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.partner-card{background:var(--w);border-radius:var(--radius);padding:30px 26px;border:1px solid var(--border);transition:transform .35s cubic-bezier(.23,1,.32,1),box-shadow .35s}
+.partner-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
+.partner-type{font-family:'DM Mono',monospace;font-size:10px;color:var(--gm);letter-spacing:1.5px;margin-bottom:10px}
+.partner-name{font-size:15px;font-weight:500;color:var(--ink);margin-bottom:8px}
+.partner-desc{font-size:13px;color:var(--ink3);line-height:1.65;font-weight:300}
+.partner-logos-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:44px}
+.p-chip{background:var(--w);border:1px solid var(--border);padding:10px 20px;border-radius:var(--radius);font-size:13px;color:var(--ink2);font-weight:400;transition:border-color .3s,transform .2s,box-shadow .3s}
+.p-chip:hover{border-color:var(--ga);transform:translateY(-1px);box-shadow:var(--shadow-sm)}
+.p-chip.highlight{border-color:rgba(212,168,67,0.4);color:#9B7420;font-weight:500;background:rgba(212,168,67,0.04)}
+.partner-logos-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;margin-top:30px}
+.partner-logo{background:var(--w);border:1px solid var(--border);border-radius:var(--radius);padding:20px;display:flex;align-items:center;justify-content:center;min-height:100px;transition:transform .3s,box-shadow .3s}
+.partner-logo:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,0.08)}
+.partner-logo img{max-width:100%;max-height:60px;object-fit:contain}
+
+/* MENTORS */
+.mentors-section{background:var(--w)}
+.role-group{margin-top:48px}
+.role-group-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}
+.role-group-title{margin:0;font-family:'Playfair Display',serif;font-size:28px;font-weight:600;color:var(--ink)}
+.role-group-copy{margin:0;max-width:540px;color:var(--ink3);font-size:14px;line-height:1.6}
+.mentors-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:56px}
+.role-group .mentors-grid{margin-top:0}
+.mentor-card{transition:transform .4s cubic-bezier(.23,1,.32,1)}
+.mentor-card:hover{transform:translateY(-6px)}
+.mentor-img{width:100%;aspect-ratio:1;border-radius:var(--radius-lg);object-fit:cover;margin-bottom:18px;filter:grayscale(25%) brightness(0.95);transition:filter .4s,box-shadow .4s}
+.mentor-card:hover .mentor-img{filter:grayscale(0%) brightness(1);box-shadow:0 12px 36px rgba(0,0,0,0.12)}
+.mentor-name{font-size:15px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.mentor-role{font-size:12px;color:var(--gm);font-weight:400;margin-bottom:4px;font-family:'DM Mono',monospace;letter-spacing:.5px}
+.mentor-org{font-size:13px;color:var(--ink3);font-weight:300;margin-bottom:10px}
+.mentor-quote{font-size:13px;color:var(--ink2);font-style:italic;line-height:1.6;border-top:1px solid var(--border);padding-top:12px;font-family:'Playfair Display',serif}
+
+/* RECOGNITION */
+.recognition-section{background:#071512;position:relative;overflow:hidden;padding:96px 80px}
+.recognition-section::before{content:'';position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(212,168,67,0.05) 0%,transparent 65%);border-radius:50%}
+.recognition-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-top:56px;position:relative;z-index:1}
+.rec-card{border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);padding:30px 26px;transition:border-color .4s,transform .4s,box-shadow .4s;background:rgba(255,255,255,0.02);backdrop-filter:blur(4px)}
+.rec-card:hover{border-color:rgba(212,168,67,0.25);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.2)}
+.rec-card.featured{border:1px solid rgba(212,168,67,0.3);background:rgba(212,168,67,0.04);box-shadow:var(--shadow-glow)}
+.rec-logo{width:40px;height:40px;border-radius:var(--radius-sm);background:rgba(212,168,67,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.rec-logo.lg{width:48px;height:48px}
+.rec-logo-txt{font-size:12px;font-weight:600;color:var(--ga);font-family:'DM Mono',monospace}
+.rec-logo.lg .rec-logo-txt{font-size:16px}
+.rec-title{font-size:15px;font-weight:500;color:#fff;margin-bottom:10px}
+.rec-body{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.7;font-weight:300}
+.rec-year{font-family:'DM Mono',monospace;font-size:11px;color:var(--ga);margin-top:16px;display:block;letter-spacing:.5px}
+.rec-tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.rec-tag{font-family:'DM Mono',monospace;font-size:10px;background:rgba(212,168,67,0.12);color:var(--ga);padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+
+/* CAREERS */
+.careers-section{background:var(--cream)}
+.careers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.career-card{background:var(--w);border-radius:var(--radius);padding:32px 28px;border:1px solid var(--border);transition:transform .35s cubic-bezier(.23,1,.32,1),box-shadow .35s,border-color .3s}
+.career-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08);border-color:rgba(212,168,67,0.3)}
+.career-badge{font-family:'DM Mono',monospace;font-size:10px;color:var(--ga);letter-spacing:1.5px;margin-bottom:12px;text-transform:uppercase}
+.career-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--ink);margin-bottom:12px;line-height:1.3}
+.career-desc{font-size:14px;color:var(--ink3);line-height:1.7;font-weight:300;margin-bottom:18px}
+.career-link{font-size:13px;font-weight:500;color:var(--gm);letter-spacing:.3px;transition:color .3s,padding-left .2s;display:inline-block}
+.career-card:hover .career-link{color:var(--ga);padding-left:4px}
+
+/* CTA */
+.cta-section{background:var(--gradient-hero);padding:100px 80px;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;bottom:-30%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(212,168,67,0.06) 0%,transparent 60%);border-radius:50%}
+.cta-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;z-index:1}
+.cta-text h2{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:#fff;line-height:1.15;margin-bottom:20px}
+.cta-text h2 em{color:transparent;background:var(--gradient-accent);-webkit-background-clip:text;background-clip:text;font-style:italic}
+.cta-text p{font-size:16px;color:rgba(255,255,255,0.5);line-height:1.8;font-weight:300}
+.cta-cards{display:flex;flex-direction:column;gap:14px}
+.cta-card{background:rgba(255,255,255,0.04);border:1px solid rgba(212,168,67,0.1);border-radius:var(--radius);padding:22px 26px;cursor:pointer;transition:all .35s cubic-bezier(.23,1,.32,1);display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(4px)}
+.cta-card:hover{background:rgba(212,168,67,0.06);border-color:rgba(212,168,67,0.3);transform:translateX(8px);box-shadow:0 8px 32px rgba(0,0,0,0.15)}
+.cta-card-l{font-size:14px;font-weight:500;color:#fff;margin-bottom:4px}
+.cta-card-s{font-size:12px;color:rgba(255,255,255,0.35);font-weight:300}
+.cta-card-arrow{color:var(--ga);font-size:20px;transition:transform .3s}
+.cta-card:hover .cta-card-arrow{transform:translateX(4px)}
+
+/* NEWSLETTER */
+.newsletter-section{background:var(--w);padding:80px}
+.newsletter-inner{max-width:700px;margin:0 auto;text-align:center}
+.newsletter-inner .section-title{margin-bottom:14px}
+.newsletter-inner .section-body{max-width:500px;margin:0 auto 40px}
+.newsletter-form{display:flex;gap:14px;max-width:500px;margin:0 auto}
+.newsletter-form input{flex:1;padding:15px 22px;border:1px solid var(--border);border-radius:var(--radius);font-size:14px;font-family:'DM Sans',sans-serif;background:var(--cream);outline:none;transition:border-color .3s,box-shadow .3s}
+.newsletter-form input:focus{border-color:var(--ga);box-shadow:0 0 0 3px rgba(212,168,67,0.1)}
+.newsletter-form button{padding:15px 30px;background:var(--g);color:#fff;border:none;border-radius:var(--radius);font-size:14px;font-weight:500;transition:background .3s,transform .2s;white-space:nowrap}
+.newsletter-form button:hover{background:var(--gm);transform:translateY(-1px)}
+
+/* CONTACT FORM */
+.contact-section{background:var(--w)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.contact-form{display:flex;flex-direction:column;gap:22px}
+.form-group{display:flex;flex-direction:column;gap:8px}
+.form-group label{font-size:12px;font-weight:500;color:var(--ink);font-family:'DM Mono',monospace;letter-spacing:1px}
+.form-group input,.form-group textarea{padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius);font-size:15px;font-family:'DM Sans',sans-serif;background:var(--cream);outline:none;transition:border-color .3s,box-shadow .3s;color:var(--ink)}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--ga);box-shadow:0 0 0 4px rgba(212,168,67,0.1)}
+.form-group textarea{resize:vertical;min-height:150px}
+.form-group input.error,.form-group textarea.error{border-color:#e74c3c;box-shadow:0 0 0 3px rgba(231,76,60,0.1)}
+.form-error{font-size:12px;color:#e74c3c;margin-top:4px;display:none}
+.form-group.has-error .form-error{display:block}
+.form-submit{padding:17px 40px;background:var(--gradient-accent);color:#0B1F1A;border:none;border-radius:var(--radius);font-size:15px;font-weight:600;transition:transform .3s,box-shadow .3s;align-self:flex-start;box-shadow:0 4px 20px rgba(212,168,67,0.3)}
+.form-submit:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(212,168,67,0.45)}
+.contact-info{padding-top:20px}
+.contact-info-item{display:flex;gap:18px;align-items:flex-start;padding:22px 0;border-bottom:1px solid var(--border);transition:padding-left .2s}
+.contact-info-item:hover{padding-left:4px}
+.contact-info-item:last-child{border-bottom:none}
+.contact-info-icon{width:48px;height:48px;border-radius:var(--radius);background:linear-gradient(135deg,rgba(212,168,67,0.08) 0%,rgba(45,212,168,0.05) 100%);display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid rgba(212,168,67,0.1)}
+.contact-info-icon svg{width:20px;height:20px;color:var(--ga)}
+.contact-info-text h4{font-size:14px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.contact-info-text p{font-size:14px;color:var(--ink3);font-weight:300;line-height:1.65}
+.contact-social{display:flex;gap:12px;margin-top:32px}
+.contact-social a{width:48px;height:48px;border-radius:var(--radius);background:var(--cream);display:flex;align-items:center;justify-content:center;color:var(--ink3);transition:all .35s cubic-bezier(.23,1,.32,1);border:1px solid var(--border)}
+.contact-social a:hover{background:var(--gradient-accent);color:#0B1F1A;transform:translateY(-3px);box-shadow:0 8px 24px rgba(212,168,67,0.3);border-color:transparent}
+.contact-social a svg{width:18px;height:18px}
+
+.form-toast{position:fixed;bottom:32px;right:32px;background:var(--g);color:#fff;padding:18px 32px;border-radius:var(--radius);font-size:14px;font-weight:500;box-shadow:0 12px 40px rgba(0,0,0,0.25);z-index:9999;transform:translateY(120%);transition:transform .5s cubic-bezier(.23,1,.32,1);border:1px solid rgba(212,168,67,0.15)}
+.form-toast.show{transform:translateY(0)}
+.loader{width:14px;height:14px;border:2px solid rgba(255,255,255,0.3);border-radius:50%;border-top-color:#fff;display:inline-block;animation:spin .8s linear infinite;margin-right:8px;vertical-align:middle}
+@keyframes spin{to{transform:rotate(360deg)}}
+.form-success-message{animation:fadeUp .6s cubic-bezier(.23,1,.32,1) forwards}
+
+/* FAQ */
+.faq-section{background:var(--w);padding:96px 80px}
+.faq-inner{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid rgba(11,31,26,0.06);padding:0}
+.faq-btn{width:100%;background:none;border:none;padding:26px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;cursor:pointer;text-align:left;font-family:'DM Sans',sans-serif;transition:padding-left .2s}
+.faq-btn:hover{padding-left:8px}
+.faq-btn:hover .faq-q{color:#0B1F1A}
+.faq-q{font-size:16px;font-weight:500;color:#0B1F1A;line-height:1.4;transition:color .3s;flex:1}
+.faq-icon{width:28px;height:28px;border-radius:50%;background:var(--cream);border:1px solid rgba(11,31,26,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .35s;margin-top:2px}
+.faq-icon svg{transition:transform .35s}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
+.faq-answer-inner{font-size:15px;color:var(--ink2);line-height:1.85;font-weight:300;padding-bottom:26px}
+.faq-answer-inner a{color:var(--gm);text-decoration:underline}
+.faq-item.open .faq-icon{background:var(--gradient-accent);border-color:transparent;box-shadow:0 0 12px rgba(212,168,67,0.3)}
+.faq-item.open .faq-icon svg{transform:rotate(45deg)}
+.faq-item.open .faq-q{color:#0B1F1A}
+.faq-item.open .faq-answer{max-height:500px}
+.faq-cta{margin-top:52px;padding:30px 36px;background:var(--cream);border-radius:var(--radius);border-left:3px solid var(--ga);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+
+/* FOOTER */
+footer{background:#040D0A;padding:64px 80px 36px;position:relative}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(212,168,67,0.3) 50%,transparent 100%)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:52px}
+.footer-sub{font-size:13px;color:rgba(255,255,255,0.28);line-height:1.75;font-weight:300}
+.footer-social{display:flex;gap:12px;margin-top:24px}
+.footer-social a{width:38px;height:38px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);transition:all .35s cubic-bezier(.23,1,.32,1)}
+.footer-social a:hover{border-color:var(--ga);color:var(--ga);transform:translateY(-3px);box-shadow:0 4px 16px rgba(212,168,67,0.2)}
+.footer-social a svg{width:14px;height:14px}
+.footer-col h4{font-family:'DM Mono',monospace;font-size:10px;color:rgba(255,255,255,0.25);letter-spacing:2.5px;margin-bottom:18px}
+.footer-col a{display:block;font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:10px;cursor:pointer;font-weight:300;transition:color .3s,padding-left .2s}
+.footer-col a:hover{color:var(--ga);padding-left:4px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,0.18);font-weight:300}
+.footer-bottom span{font-family:'DM Mono',monospace;font-size:11px;color:rgba(212,168,67,0.4);letter-spacing:.5px}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+.hero-content > *{animation:fadeUp .9s cubic-bezier(.23,1,.32,1) forwards;opacity:0}
+.hero-eyebrow{animation-delay:.1s}
+.hero h1{animation-delay:.25s}
+.hero-sub{animation-delay:.4s}
+.hero-btns{animation-delay:.55s}
+.hero-stats{animation-delay:.7s}
+.animate-on-scroll{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.23,1,.32,1),transform .8s cubic-bezier(.23,1,.32,1)}
+.animate-on-scroll.visible{opacity:1;transform:translateY(0)}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+}
+
+/* RESPONSIVE */
+@media (max-width:1200px){
+  .mentors-grid{grid-template-columns:repeat(3,1fr)}
+  .impact-grid{grid-template-columns:repeat(4,1fr)}
+  .partner-logos-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:900px){
+  section{padding:64px 24px}
+  nav{padding:0 20px;height:64px}
+  .nav-links{display:none}
+  .nav-cta{display:none}
+  .nav-hamburger{display:flex}
+  .hero{padding:100px 0 60px}
+  .hero-content{padding:0 24px}
+  .about-grid,.toc-grid,.programs-intro,.cta-inner,.contact-grid,.footer-grid{grid-template-columns:1fr;gap:40px}
+  .impact-grid{grid-template-columns:1fr 1fr}
+  .mentors-grid{grid-template-columns:1fr 1fr}
+  .role-group-head{flex-direction:column;align-items:flex-start}
+  .recognition-grid,.partners-grid,.careers-grid{grid-template-columns:1fr}
+  .timeline-outer::before{left:60px}
+  .t-row{gap:24px}
+  .t-img{display:none}
+  .hero-stats{gap:24px}
+  .prog-grid{grid-template-columns:1fr}
+  .impact-photos{grid-template-columns:1fr}
+  .newsletter-section{padding:64px 24px}
+  .newsletter-form{flex-direction:column}
+  .cta-section{padding:64px 24px}
+  .recognition-section{padding:64px 24px}
+  .faq-section{padding:64px 24px}
+  footer{padding:48px 24px 24px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .partner-logos-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+  .impact-grid{grid-template-columns:1fr}
+  .mentors-grid{grid-template-columns:1fr}
+  .hero h1{font-size:36px}
+  .hero-stats{flex-direction:column;gap:20px}
+  .hstat-n{font-size:28px}
+  .footer-grid{grid-template-columns:1fr}
+  .t-year-col{width:50px}
+  .timeline-outer::before{left:40px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-left">
+    <a href="#hero" class="nav-logo-container">
+      <img src="assets/website/download.jpeg" alt="Netratvshaala" class="nav-logo-img" width="40" height="40" fetchpriority="high">
+      <span class="nav-logo-text">Netratvshaala</span>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#partners">Partners</a>
+    <a href="#mentors">Mentors</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-cta">Join Us →</a>
+  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#programs">Programs</a>
+  <a href="#partners">Partners</a>
+  <a href="#mentors">Mentors</a>
+  <a href="#careers">Careers</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<div class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span>WHERE INDIA'S FUTURE IS FORGED</span>
+    </div>
+    <h1>We do not wait for<br>leaders to emerge.<br><em>We build them.</em></h1>
+    <p class="hero-sub">Netratvshaala is a leadership and innovation platform working across governance, grassroots entrepreneurship, and emerging technologies. We partner with governments, institutions, and ecosystem leaders to build solutions that translate into real-world impact.</p>
+    <div class="hero-btns">
+      <a href="#programs" class="btn-primary">Explore Programs</a>
+      <a href="#about" class="btn-ghost">Our Decade of Impact →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-n">10+</div><div class="hstat-l">Years of sustained<br>leadership development</div></div>
+      <div class="hstat"><div class="hstat-n">8000+</div><div class="hstat-l">Leaders trained across<br>India</div></div>
+      <div class="hstat"><div class="hstat-n">₹10Cr</div><div class="hstat-l">Startup fund<br>committed</div></div>
+      <div class="hstat"><div class="hstat-n">6</div><div class="hstat-l">Active programs<br>driving impact</div></div>
+      <div class="hstat"><div class="hstat-n">2</div><div class="hstat-l">International awards —<br>UN Women + Polaris, London</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-grid">
+    <div class="about-img animate-on-scroll">
+      <img src="assets/website/2016 image.jpg" alt="Leadership dialogue session" loading="lazy" decoding="async">
+      <div class="about-img-badge">
+        <div class="badge-n">2016</div>
+      </div>
+    </div>
+    <div class="about-text animate-on-scroll">
+      <span class="section-eyebrow">WHO WE ARE</span>
+      <h2 class="section-title">A do tank.<br>Not a think tank.</h2>
+      <p class="section-body" style="margin-bottom:20px;">Netratvshaala is a leadership and innovation platform working across governance, grassroots entrepreneurship, and emerging technologies. We partner with governments, institutions, and ecosystem leaders to build solutions that translate into real-world impact.</p>
+      <p class="section-body">We work with governments, police departments, startups, MSMEs, women entrepreneurs, content creators, and public officials. We have shaped startup policy, trained police on AI threats, powered women founders, and anchored national conversations on inclusive technology.</p>
+      <blockquote>
+        <p>"Every problem India faces is, at its root, a leadership problem."</p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- THEORY OF CHANGE -->
+<section class="toc-section" id="toc">
+  <span class="section-eyebrow">THEORY OF CHANGE</span>
+  <h2 class="section-title light">We don't just train leaders.<br>We build the architecture for change.</h2>
+  <div class="toc-grid">
+    <div class="toc-steps animate-on-scroll">
+      <div class="toc-step">
+        <div class="toc-step-num">01</div>
+        <div>
+          <div class="toc-step-title">Identify the Leadership Gap</div>
+          <div class="toc-step-body">Every sector in India — governance, tech, culture, entrepreneurship — has leadership gaps. We identify where the gap is widest and where intervention will have the highest multiplier impact.</div>
+        </div>
+      </div>
+      <div class="toc-step">
+        <div class="toc-step-num">02</div>
+        <div>
+          <div class="toc-step-title">Design the Right Program</div>
+          <div class="toc-step-body">For each gap we design a specific, structured program — not a generic workshop, but a deeply researched intervention with measurable outcomes, clear mentorship tracks, and institutional partnerships.</div>
+        </div>
+      </div>
+      <div class="toc-step">
+        <div class="toc-step-num">03</div>
+        <div>
+          <div class="toc-step-title">Build the Ecosystem Around It</div>
+          <div class="toc-step-body">Programs alone don't create change. We build the ecosystem — connecting participants with mentors, investors, government bodies, incubators, and peer networks that sustain impact long after the program ends.</div>
+        </div>
+      </div>
+      <div class="toc-step">
+        <div class="toc-step-num">04</div>
+        <div>
+          <div class="toc-step-title">Scale Through Institutional Partnerships</div>
+          <div class="toc-step-body">We scale proven programs through government mandates, CSR partnerships, and bilateral collaborations. What starts in one district can become a national movement — as Yashoda AI did, from UP villages to 17 states.</div>
+        </div>
+      </div>
+      <div class="toc-step">
+        <div class="toc-step-num">05</div>
+        <div>
+          <div class="toc-step-title">Measure, Document, Iterate</div>
+          <div class="toc-step-body">We track outcomes — not just outputs. Leaders trained, businesses started, policies shaped, lives changed. Every program is evaluated, refined, and scaled on the basis of real-world results.</div>
+        </div>
+      </div>
+    </div>
+    <div class="toc-visual animate-on-scroll">
+      <img src="assets/website/Campus Leadership Labs Across UP 2.JPG" alt="Team collaboration" loading="lazy" decoding="async">
+      <div class="toc-visual-overlay"></div>
+      <div class="toc-visual-text">
+        <h3>"From local action to national impact — that is the Netratvshaala way."</h3>
+        <p>2016–2026 · A decade of doing</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY / TIMELINE -->
+<section class="journey-section" id="journey">
+  <span class="section-eyebrow">OUR JOURNEY · 2016 — 2026</span>
+  <h2 class="section-title">A decade of planting seeds.<br>A movement in the making.</h2>
+  <div class="timeline-outer animate-on-scroll">
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2016</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">Youth Ideas — The First Dialogue</div>
+        <div class="t-body">A small circle of young people in UP sat in unscripted conversation with IAS officers and public leaders. No agenda. No complaints. Just: "What can we build?" It was the seed of everything that followed.</div>
+        <span class="t-tag">GOVERNANCE</span>
+      </div>
+      <div class="t-img"><img src="assets/website/Youth Ideas 2016.jpg" alt="2016 dialogue" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2018</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">Campus Leadership Labs Across UP</div>
+        <div class="t-body">Thousands of college students across Uttar Pradesh experienced a new way of seeing themselves — not as bystanders, but as problem-solvers. Future founders, officers, and community leaders passed through our workshops.</div>
+        <span class="t-tag">EDUCATION</span>
+      </div>
+      <div class="t-img"><img src="assets/website/Campus Leadership Labs Across UP 2.JPG" alt="Campus workshops" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2020</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">Online Leadership Camps — Constraint Becomes Reach</div>
+        <div class="t-body">When the world locked down, we opened wider. Digital bootcamps and dialogue series connected young people, policymakers, and practitioners across geographies. Our reach expanded beyond UP for the first time.</div>
+        <span class="t-tag">DIGITAL</span>
+      </div>
+      <div class="t-img"><img src="assets/website/Online Leadership Camps — Constraint Becomes Reach.jpg" alt="Online camps" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2021</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">AARAMBH — Startup Bootcamp with Govt of UP</div>
+        <div class="t-body">In partnership with the Government of Uttar Pradesh's "Start in UP" initiative, we launched AARAMBH — a state-backed startup bootcamp taking early-stage founders from idea to pilot, connecting them to incubators and state support systems.</div>
+        <span class="t-tag">STARTUP · GOVT PARTNERSHIP</span>
+      </div>
+      <div class="t-img"><img src="assets/website/Aarambh.JPG" alt="AARAMBH bootcamp" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2022</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">Investor Workshops + Hackathons for Smart City Solutions</div>
+        <div class="t-body">We demystified startup funding through investor awareness workshops and ran hackathons in five incubators, in partnership with smart city and state government — helping student teams and founders translate ideas into working prototypes with access to real infrastructure.</div>
+        <span class="t-tag">STARTUP ECOSYSTEM · SMART CITY</span>
+      </div>
+      <div class="t-img"><img src="assets/website/Investor Workshops + Hackathons for Smart City Solutions.jpeg" alt="Hackathon" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2022</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">Science for Policy — Open Access & National Vision</div>
+        <div class="t-body">We launched the Science for Policy forum, contributing to India's "One Nation One Subscription" vision — democratising access to scientific research for every citizen and researcher across India.</div>
+        <span class="t-tag">POLICY · OPEN SCIENCE</span>
+      </div>
+      <div class="t-img"><img src="assets/website/Science for Policy — Open Access & National Vision (1).jpg" alt="Science for Policy" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2023</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">Women Entrepreneurship Program</div>
+        <div class="t-body">We built a dedicated track for women founders — helping them formalise businesses, access networks, and step confidently into the formal startup ecosystem. India's next wave of entrepreneurs is female.</div>
+        <span class="t-tag">WOMEN LEADERSHIP</span>
+      </div>
+      <div class="t-img"><img src="assets/website/women event 1.jpg" alt="Women program" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2025</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">Deepfake Detection & AI Awareness — Shrawasti Police</div>
+        <div class="t-body">Netratvshaala's Inclusive AI unit partnered with Shrawasti Police to run India's most comprehensive deepfake detection and AI cyber-awareness campaign — making Shrawasti the first district in India to achieve this milestone. The campaign was featured in the UN Women AI Impact Summit playbook. In 2025, SP Ghanshyam Chaurasia received the <strong>Silver Polaris Award</strong> from Capital Media Group, London — an international recognition for the program's impact.</div>
+        <span class="t-tag">AI SAFETY · UN WOMEN · POLARIS AWARD 2025</span>
+      </div>
+      <div class="t-img"><img src="assets/website/Deepfake Detection & AI Awareness 2 (1).JPG" alt="AI training UP Police" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2025</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">Digital Arrest Awareness — UP Police Training</div>
+        <div class="t-body">We trained UP Police officials on digital arrest awareness — building their capacity to understand, investigate, and counter digital fraud, online impersonation, and cyber-enabled crimes affecting citizens.</div>
+        <span class="t-tag">DIGITAL SAFETY · LAW ENFORCEMENT</span>
+      </div>
+      <div class="t-img"><img src="assets/website/Digital Arrest 2.JPG" alt="Digital arrest awareness" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2025</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">Yashoda AI — National Commission for Women, Uttar Pradesh</div>
+        <div class="t-body">In one of our most significant deployments, Netratvshaala supported the implementation of Yashoda AI with the National Commission for Women in Uttar Pradesh — bringing AI-powered tools to the frontlines of women's safety, grievance redressal, and empowerment at scale. Yashoda AI is now an active, ongoing program of Netratvshaala.</div>
+        <span class="t-tag">AI FOR WOMEN · NCW · ACTIVE PROGRAM</span>
+      </div>
+      <div class="t-img"><img src="assets/website/Yashoda AI.png" alt="Yashoda AI NCW" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="t-row">
+      <div class="t-year-col"><div class="t-year">2026</div></div>
+      <div class="t-dot-col"><div class="t-dot"></div></div>
+      <div class="t-content">
+        <div class="t-title">Inclusive AI at Impact AI Summit, Delhi</div>
+        <div class="t-body">Netratvshaala's Inclusive AI team participated in the AI Impact Summit, advancing conversations on inclusive AI and building stronger linkages between policy, innovation, and real-world implementation.</div>
+        <span class="t-tag">GLOBAL PLATFORM · INCLUSIVE AI</span>
+      </div>
+      <div class="t-img"><img src="assets/website/WhatsApp Image 2026-04-18 at 1.19.39 PM (2).jpeg" alt="AI Summit" loading="lazy" decoding="async"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="programs-section" id="programs">
+  <div class="programs-intro animate-on-scroll">
+    <div>
+      <span class="section-eyebrow">PROGRAMS &amp; INITIATIVES</span>
+      <h2 class="section-title">Six programs.<br>One purpose.</h2>
+    </div>
+    <div>
+      <p class="section-body">Each program at Netratvshaala is designed around a specific leadership gap — in the startup ecosystem, in public institutions, in culture, and in the digital age. Together they form a complete architecture for change.</p>
+    </div>
+  </div>
+  <div class="prog-grid animate-on-scroll">
+    <div class="prog-card prog-highlight">
+      <div class="prog-num">01 — STARTUP CHALLENGE</div>
+      <div class="prog-name">₹5 Crore. One Idea. Unlimited Impact.</div>
+      <div class="prog-tag">Funding · Mentorship · Ecosystem Access</div>
+      <div class="prog-body">We invest ₹5 Crore in breakthrough startup ideas — solutions to India's hardest problems in governance, health, agriculture, education, safety, or sustainability. This is not a grant. It is a bet on the leader behind the idea.</div>
+      <ul class="prog-outcomes">
+        <li>Open to early and growth-stage founders</li>
+        <li>Focus on deep-problem, public-interest sectors</li>
+        <li>Mentorship from ecosystem leaders + government advisors</li>
+        <li>Linkage to incubators, angels, VCs, global mentors and state support</li>
+      </ul>
+    </div>
+    <div class="prog-card">
+      <div class="prog-num">02 — AI SAKSHAM: AI FOR MSME</div>
+      <div class="prog-name">Don't Fear AI. Lead With It.</div>
+      <div class="prog-tag">AI Adoption · Hands-on Workshops · Peer Learning</div>
+      <div class="prog-body">India's 63 million MSMEs are watching the AI revolution from the sidelines. <em>AI Saksham</em> is a hands-on adoption journey that puts practical AI tools directly in the hands of small business owners and their teams — turning AI from a threat into their sharpest competitive edge.</div>
+      <ul class="prog-outcomes">
+        <li>Practical AI literacy for business owners and managers</li>
+        <li>Use-case identification for time and cost savings</li>
+        <li>Sector-specific tracks: manufacturing, retail, agri, services</li>
+        <li>Peer cohorts with fellow MSME founders across India</li>
+      </ul>
+    </div>
+    <div class="prog-card">
+      <div class="prog-num">03 — BHARAT DEEP TECH: SCIENTISTS TO FOUNDERS</div>
+      <div class="prog-name">Turning Scientists into Founders. Researchers into Leaders.</div>
+      <div class="prog-tag">Deep Tech · Scientist-to-Founder · Venture Building</div>
+      <div class="prog-body">India produces world-class researchers, scientists, and engineers. But brilliant research locked in labs does not change lives. This program bridges the gap — transforming deep tech talent into founders who can build ventures, attract investment, shape policy, and take India's technology capabilities to the world.</div>
+      <ul class="prog-outcomes">
+        <li>Scientist-to-founder transition: from lab to market</li>
+        <li>Venture building for researchers and engineers</li>
+        <li>Investor readiness and deep tech fundraising</li>
+        <li>Policy navigation and government-sector engagement</li>
+      </ul>
+    </div>
+    <div class="prog-card">
+      <div class="prog-active-badge">ACTIVE · NCW</div>
+      <div class="prog-num">04 — YASHODA AI</div>
+      <div class="prog-name">India's First National AI Literacy Movement for Women.</div>
+      <div class="prog-tag">Women · AI Literacy · NCW · 17 States</div>
+      <div class="prog-body">Launched by the National Commission for Women (NCW) and powered by Netratvshaala, Yashoda AI is India's pioneering initiative to bridge the gender divide in AI awareness and digital empowerment. Not just a program — a transformative national movement equipping women from every corner of India with the skills, tools, and confidence to navigate, shape, and lead in an AI-driven world.</div>
+      <ul class="prog-outcomes">
+        <li>5,539+ women trained across 17 states &amp; union territories</li>
+        <li>38+ workshops held in regional languages — Hindi, English &amp; more</li>
+        <li>AI literacy workshops, curriculum tracks &amp; AI Sakhi peer support</li>
+        <li>AI Squad Program: campus clubs nurturing youth AI leaders</li>
+        <li>Featured in India AI Mission / MeitY's AI by HER global challenge</li>
+        <li>Partners: NITI Aayog, WEP, Future Shift Labs &amp; 15+ implementation partners</li>
+      </ul>
+    </div>
+    <div class="prog-card">
+      <div class="prog-num">05 — INCLUSIVE AI</div>
+      <div class="prog-name">Making AI understandable, equitable, and usable in public systems.</div>
+      <div class="prog-tag">AI Literacy · AI Safety · Governance · Public Systems</div>
+      <div class="prog-body">Inclusive AI is Netratvshaala's core pillar enabling responsible AI in governance and public institutions. We work with police, administrators, and policymakers to build capacity and deploy solutions that address deepfakes, digital fraud, and algorithmic risks. <a href="https://inclusiveai.in/" target="_blank" rel="noopener" style="color:var(--ga);text-decoration:underline;display:block;margin-top:12px;font-weight:500;">Visit Program Website →</a></div>
+      <ul class="prog-outcomes">
+        <li>AI literacy and digital safety for government officials</li>
+        <li>Deepfake detection and information disorder response</li>
+        <li>Digital arrest awareness and cybercrime capacity building</li>
+        <li>AI governance frameworks for public institutions</li>
+      </ul>
+    </div>
+    <div class="prog-card">
+      <div class="prog-num">06 — SUSHMA SWARAJ MEMORIAL FELLOWSHIP</div>
+      <div class="prog-name">Telling India's Story to the World.</div>
+      <div class="prog-tag">Content Creators · Soft Power · India's Voice</div>
+      <div class="prog-body">Inspired by Smt. Sushma Swaraj — India's most beloved diplomat, who wielded soft power like a superpower — this fellowship supports content creators showing India's civilisational depth, democratic values, and cultural strength globally.</div>
+      <ul class="prog-outcomes">
+        <li>Fellowship for India's soft power storytellers</li>
+        <li>Mentorship from journalists, diplomats, filmmakers</li>
+        <li>Platforms and amplification for Fellows' work</li>
+        <li>Annual cohort with national and international reach</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT NUMBERS -->
+<section class="impact-section" id="impact">
+  <span class="section-eyebrow">OUR IMPACT</span>
+  <h2 class="section-title light">Ten years of doing.<br>Here is what that looks like.</h2>
+  <div class="impact-grid animate-on-scroll">
+    <div class="impact-card"><div class="impact-n">8000+</div><div class="impact-label">Leaders trained</div><div class="impact-detail">Students, founders, police officers, bureaucrats, women entrepreneurs</div></div>
+    <div class="impact-card"><div class="impact-n">10+</div><div class="impact-label">Years of sustained leadership development</div><div class="impact-detail">No breaks. One consistent mission since 2016</div></div>
+    <div class="impact-card"><div class="impact-n">₹10Cr</div><div class="impact-label">Startup fund open</div><div class="impact-detail">Committed to funding breakthrough ideas solving India's hardest problems</div></div>
+    <div class="impact-card"><div class="impact-n">25+</div><div class="impact-label">Incubators partnered</div><div class="impact-detail">Hackathons, mentorship, and prototype support across India</div></div>
+    <div class="impact-card"><div class="impact-n">2</div><div class="impact-label">State-level AI programs</div><div class="impact-detail">Deepfake detection + Yashoda AI with UP Police &amp; NCW</div></div>
+    <div class="impact-card"><div class="impact-n">2</div><div class="impact-label">International recognitions</div><div class="impact-detail">UN Women AI Summit Playbook + Silver Polaris Award (London)</div></div>
+    <div class="impact-card"><div class="impact-n">6</div><div class="impact-label">Active programs driving impact</div><div class="impact-detail">Spanning startups, AI, governance, culture, women &amp; deep tech</div></div>
+    <div class="impact-card"><div class="impact-n">2</div><div class="impact-label">National policy contributions</div><div class="impact-detail">Science for Policy forum + Digital Protection (MEITY &amp; MHA)</div></div>
+  </div>
+  <div class="impact-photos animate-on-scroll">
+    <div class="impact-photo">
+      <img src="assets/website/Deepfake Detection & AI Awareness 3.JPG" alt="Workshop session" loading="lazy" decoding="async">
+      <div class="impact-photo-label"><span>WORKSHOP · 2026</span><p>AI literacy session with women entrepreneurs</p></div>
+    </div>
+    <div class="impact-photo">
+      <img src="assets/website/Campus Leadership Labs Across UP.jpg" alt="Program cohort" loading="lazy" decoding="async">
+      <div class="impact-photo-label"><span>STARTUP CHALLENGE · 2023</span><p>Founder cohort pitch day</p></div>
+    </div>
+    <div class="impact-photo">
+      <img src="assets/website/WhatsApp Image 2026-04-21 at 12.21.49 AM.jpeg" alt="Conference" loading="lazy" decoding="async">
+      <div class="impact-photo-label"><span>RECOGNITION · 2025</span><p>Silver Polaris Award, London</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RECOGNITION -->
+<section class="recognition-section" id="recognition">
+  <span class="section-eyebrow">RECOGNITION &amp; MEDIA</span>
+  <h2 class="section-title light">A decade of doing.<br>The world is noticing.</h2>
+  <p class="section-body light" style="margin-top:8px;max-width:560px;">From London to the United Nations — international recognition for grassroots AI safety work that started in the districts of Uttar Pradesh.</p>
+  <div class="recognition-grid animate-on-scroll">
+    <div class="rec-card featured">
+      <div class="rec-logo lg" style="background:rgba(255,140,66,0.2);"><div class="rec-logo-txt">★</div></div>
+      <div class="rec-title" style="font-size:16px;">Silver Polaris Award — Capital Media Group, London</div>
+      <div class="rec-body">Netratvshaala's Inclusive AI unit partnered with Shrawasti Police to run India's most impactful deepfake detection and AI cyber-awareness campaign. Shrawasti became the first district in India recognised for AI and cyber awareness.</div>
+      <div class="rec-tags">
+        <span class="rec-tag">INTERNATIONAL AWARD</span>
+        <span class="rec-tag">INCLUSIVE AI UNIT</span>
+        <span class="rec-tag">FIRST IN INDIA</span>
+      </div>
+      <span class="rec-year">2025 — Shrawasti, Uttar Pradesh</span>
+    </div>
+    <div class="rec-card">
+      <div class="rec-logo"><div class="rec-logo-txt">UN</div></div>
+      <div class="rec-title">UN Women AI Impact Summit Playbook</div>
+      <div class="rec-body">Our deepfake detection workshop for the Uttar Pradesh Police was featured in the United Nations Women AI Impact Summit playbook — one of the first grassroots AI safety programs in India to receive global recognition.</div>
+      <span class="rec-year">2026</span>
+    </div>
+    <div class="rec-card">
+      <div class="rec-logo"><div class="rec-logo-txt">NCW</div></div>
+      <div class="rec-title">Yashoda AI — National Commission for Women</div>
+      <div class="rec-body">Partnered with the National Commission for Women in Uttar Pradesh for the implementation of Yashoda AI — bringing state-backed AI tools to the service of women's safety across India's largest state.</div>
+      <span class="rec-year">2025</span>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners-section" id="partners">
+  <span class="section-eyebrow">PARTNERS &amp; COLLABORATORS</span>
+  <h2 class="section-title">We move with institutions.<br>Not around them.</h2>
+  <p class="section-body" style="margin-bottom:16px;">Our partners are governments, regulators, corporates, foundations, incubators, and international bodies who share our conviction that leadership is the lever that moves everything else.</p>
+  <div class="partners-grid animate-on-scroll">
+    <div class="partner-card">
+      <div class="partner-type">GOVERNMENT</div>
+      <div class="partner-name">National Commission for Women (NCW)</div>
+      <div class="partner-desc">Implementation partner for Yashoda AI — India's first national AI literacy movement for women. 5,539+ women trained across 17 states.</div>
+    </div>
+    <div class="partner-card">
+      <div class="partner-type">LAW ENFORCEMENT</div>
+      <div class="partner-name">Uttar Pradesh Police</div>
+      <div class="partner-desc">Deepfake detection and AI awareness workshops. Shrawasti became the first district in India recognised for AI and cyber awareness.</div>
+    </div>
+    <div class="partner-card">
+      <div class="partner-type">INTERNATIONAL</div>
+      <div class="partner-name">Future Shift Labs</div>
+      <div class="partner-desc">International partnership for AI governance and women empowerment programs across developing regions.</div>
+    </div>
+    <div class="partner-card">
+      <div class="partner-type">GOVERNMENT</div>
+      <div class="partner-name">NITI Aayog</div>
+      <div class="partner-desc">Science for Policy forum — bridging policy-making with deep tech innovation and data-driven governance frameworks.</div>
+    </div>
+    <div class="partner-card">
+      <div class="partner-type">GOVERNMENT</div>
+      <div class="partner-name">MEITY &amp; MHA</div>
+      <div class="partner-desc">National policy input on digital protection, AI regulation, and emerging technology governance for public safety.</div>
+    </div>
+    <div class="partner-card">
+      <div class="partner-type">ECOSYSTEM</div>
+      <div class="partner-name">25+ Incubators Across India</div>
+      <div class="partner-desc">Hackathons, mentorship, prototype support, and accelerator partnerships — empowering non-metro founders.</div>
+    </div>
+  </div>
+  <div class="partner-logos-row animate-on-scroll">
+    <span class="p-chip highlight">NCW</span>
+    <span class="p-chip highlight">UP Police</span>
+    <span class="p-chip">NITI Aayog</span>
+    <span class="p-chip">MEITY</span>
+    <span class="p-chip">MHA</span>
+    <span class="p-chip highlight">Future Shift Labs</span>
+    <span class="p-chip">WEP</span>
+    <span class="p-chip">India AI Mission</span>
+    <span class="p-chip">Capital Media Group</span>
+    <span class="p-chip">UN Women</span>
+  </div>
+
+  <h3 style="margin-top:60px;font-family:'Playfair Display',serif;font-size:24px;font-weight:600;color:var(--ink);">Our Partner Network</h3>
+  <div class="partner-logos-grid animate-on-scroll">
+    <div class="partner-logo"><img src="assets/partners/Cambridge university -Partner.png" alt="Cambridge University" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/FSL Logo-Partner.png" alt="FSL" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/Govt of UP-Logo.png" alt="Govt. of UP" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/High Tech-Partner.png" alt="High Tech" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/i start-Partner.png" alt="I Start" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/IIA-Partner.jpg" alt="IIA" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/IIT Kanpur-Partner.png" alt="IIT Kanpur" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/IIT BHU Partner.jpg" alt="IIT BHU" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/India AI-Partner.png" alt="India AI" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/innovat-Partner.png" alt="Innovat" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/NCW-Partner.jpg" alt="NCW" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/Oxford-Partner.png" alt="Oxford" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/Palm drive capital-Partner.png" alt="Palm Drive Capital" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/Picus capital-Logo.png" alt="Picus Capital" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/Polaris logo.png" alt="Polaris" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/Realty defender-Partner.png" alt="Realty Defender" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/RMP-Partner.png" alt="RMP" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/startinup-partner.png" alt="Startinup" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/startup India-Partner.png" alt="Startup India" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/TA Ventures-Partner.png" alt="TA Ventures" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/Taylor & francis-Partner.jpg" alt="Taylor & Francis" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/UP Police-Partner.png" alt="UP Police" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/Village global-Partner.png" alt="Village Global" loading="lazy" decoding="async"></div>
+    <div class="partner-logo"><img src="assets/partners/Y combinator-Logo.png" alt="Y Combinator" loading="lazy" decoding="async"></div>
+  </div>
+</section>
+
+<!-- MENTORS -->
+<section class="mentors-section" id="mentors">
+  <span class="section-eyebrow">LEADERSHIP NETWORK</span>
+  <h2 class="section-title">Directors, mentors, and advisors.</h2>
+  <p class="section-body">The people guiding Netratvshaala across leadership, governance, entrepreneurship, technology, and public impact.</p>
+
+  <div class="role-group">
+    <div class="role-group-head">
+      <h3 class="role-group-title">Directors</h3>
+      <p class="role-group-copy">Core leadership team at Netratvshaala.</p>
+    </div>
+    <div class="mentors-grid animate-on-scroll">
+      <div class="mentor-card">
+        <img src="assets/team/ravi-soni.jpeg" alt="Ravi Soni" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Ravi Soni</div>
+        <div class="mentor-role">DIRECTOR</div>
+        <div class="mentor-org">Team Netratvshaala</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/prateek-agarwal.jpeg" alt="Prateek Agarwal" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Prateek Agarwal</div>
+        <div class="mentor-role">DIRECTOR</div>
+        <div class="mentor-org">Team Netratvshaala</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/utkarsh-misra.jpeg" alt="Utkarsh Misra" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Utkarsh Misra</div>
+        <div class="mentor-role">DIRECTOR</div>
+        <div class="mentor-org">Team Netratvshaala</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="role-group">
+    <div class="role-group-head">
+      <h3 class="role-group-title">Mentors</h3>
+      <p class="role-group-copy">Practitioners and guides supporting our founders, fellows, and programs.</p>
+    </div>
+    <div class="mentors-grid animate-on-scroll">
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/akshara-damle/" target="_blank" rel="noopener"><img src="assets/team/akshara-damle.jpg" alt="Akshara Damle" class="mentor-img" loading="lazy" decoding="async"></a>
+        <div class="mentor-name">Akshara Damle</div>
+        <div class="mentor-role">MENTOR</div>
+        <div class="mentor-org">Mentor Network</div>
+      </div>
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/dr-amit-kumar-dwivedi%F0%9F%87%AE%F0%9F%87%B3-72532217/" target="_blank" rel="noopener"><img src="assets/team/amit-kumar-dwivedi.jpg" alt="Amit Kumar Dwivedi" class="mentor-img" loading="lazy" decoding="async"></a>
+        <div class="mentor-name">Amit Kumar Dwivedi</div>
+        <div class="mentor-role">MENTOR</div>
+        <div class="mentor-org">Mentor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/ankit-pandey.jpg" alt="Ankit Pandey" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Ankit Pandey</div>
+        <div class="mentor-role">MENTOR</div>
+        <div class="mentor-org">Mentor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/annushree-tiwari.jpg" alt="Annushree Tiwari" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Annushree Tiwari</div>
+        <div class="mentor-role">MENTOR</div>
+        <div class="mentor-org">Mentor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/anupam-pandey.jpg" alt="Anupam Pandey" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Anupam Pandey</div>
+        <div class="mentor-role">MENTOR</div>
+        <div class="mentor-org">Mentor Network</div>
+      </div>
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/anuprriya/" target="_blank" rel="noopener"><img src="assets/team/anuprriya.jpeg" alt="Anuprriya" class="mentor-img" loading="lazy" decoding="async"></a>
+        <div class="mentor-name">Anuprriya</div>
+        <div class="mentor-role">MENTOR</div>
+        <div class="mentor-org">Mentor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/kumar-anjaneya-shanu.jpg" alt="Kumar Anjaneya Shanu" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Kumar Anjaneya Shanu</div>
+        <div class="mentor-role">MENTOR</div>
+        <div class="mentor-org">Mentor Network</div>
+      </div>
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/shantanugupta/" target="_blank" rel="noopener"><img src="assets/team/shantanu-gupta.jpg" alt="Shantanu Gupta" class="mentor-img" loading="lazy" decoding="async"></a>
+        <div class="mentor-name">Shantanu Gupta</div>
+        <div class="mentor-role">MENTOR</div>
+        <div class="mentor-org">Mentor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/srijan-pal-singh.jpg" alt="Srijan Pal Singh" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Srijan Pal Singh</div>
+        <div class="mentor-role">MENTOR</div>
+        <div class="mentor-org">Mentor Network</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="role-group">
+    <div class="role-group-head">
+      <h3 class="role-group-title">Advisors</h3>
+      <p class="role-group-copy">Strategic advisors from public life, policy, academia, and industry.</p>
+    </div>
+    <div class="mentors-grid animate-on-scroll">
+      <div class="mentor-card">
+        <img src="assets/team/aditya-arora.jpg" alt="Aditya Arora" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Aditya Arora</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/buggeholmhansen/" target="_blank" rel="noopener"><img src="assets/team/bugge-holm-hansen.jpg" alt="Bugge Holm Hansen" class="mentor-img" loading="lazy" decoding="async"></a>
+        <div class="mentor-name">Bugge Holm Hansen</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <a href="https://x.com/DattaHosabale" target="_blank" rel="noopener"><img src="assets/team/dattatreya-hosabale.jpg" alt="Dattatreya Hosabale" class="mentor-img" loading="lazy" decoding="async"></a>
+        <div class="mentor-name">Dattatreya Hosabale</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/dr-nikhil-agarwal.jpg" alt="Dr Nikhil Agarwal" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Dr Nikhil Agarwal</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/eric-redmond.jpg" alt="Eric Redmond" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Eric Redmond</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/jessica-cussins-newman.jpg" alt="Jessica Cussins Newman" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Jessica Cussins Newman</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/katherinareiche/" target="_blank" rel="noopener"><img src="assets/team/katherina-reiche.jpg" alt="Katherina Reiche" class="mentor-img" loading="lazy" decoding="async"></a>
+        <div class="mentor-name">Katherina Reiche</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/lavu-sri-krishna.jpg" alt="Lavu Sri Krishna" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Lavu Sri Krishna</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/matthew-j-mccullough.jpg" alt="Matthew J. McCullough" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Matthew J. McCullough</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/pradeep-singh-kharola.jpg" alt="Pradeep Singh Kharola" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Pradeep Singh Kharola</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/professor-sudipta-sarangi.jpg" alt="Professor Sudipta Sarangi" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Professor Sudipta Sarangi</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/rebecca-lawrance.jpg" alt="Rebecca Lawrance" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Rebecca Lawrance</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/shashank-mani.jpg" alt="Shashank Mani" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Shashank Mani</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/shawan-anchor.png" alt="Shawan Anchor" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Shawan Anchor</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/sujeet-kumar.jpg" alt="Sujeet Kumar" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Sujeet Kumar</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/vasundhara-raje.jpg" alt="Vasundhara Raje" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Vasundhara Raje</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/vijaya-ji.jpg" alt="Vijaya Kishore Rahatkar" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Vijaya Kishore Rahatkar</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+      <div class="mentor-card">
+        <img src="assets/team/vinay-ji.jpg" alt="Vinay Sahasrabuddhe" class="mentor-img" loading="lazy" decoding="async">
+        <div class="mentor-name">Vinay Sahasrabuddhe</div>
+        <div class="mentor-role">ADVISOR</div>
+        <div class="mentor-org">Advisor Network</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREERS -->
+<section class="careers-section" id="careers">
+  <span class="section-eyebrow">CAREERS</span>
+  <h2 class="section-title">Build your<br>legacy with us.</h2>
+  <p class="section-body">We are looking for bold thinkers, passionate educators, and dedicated innovators to join our team in shaping the future of India.</p>
+  <div class="careers-grid animate-on-scroll">
+    <div class="career-card">
+      <div class="career-badge">FULL-TIME · NORTH INDIA</div>
+      <div class="career-title">Senior Program Manager</div>
+      <div class="career-desc">Lead our flagship MSME Digital Enablement initiatives across North India. Over 5 years of tech policy experience required.</div>
+      <a class="career-link" href="#contact">View Role →</a>
+    </div>
+    <div class="career-card">
+      <div class="career-badge">FULL-TIME · REMOTE</div>
+      <div class="career-title">Policy Researcher</div>
+      <div class="career-desc">Research intersecting deep tech, geopolitical trends, and policy frameworks. Full-time remote acceptable.</div>
+      <a class="career-link" href="#contact">View Role →</a>
+    </div>
+    <div class="career-card">
+      <div class="career-badge">FULL-TIME · HYBRID</div>
+      <div class="career-title">Communications Lead</div>
+      <div class="career-desc">Drive Netratvshaala's narrative across national media, press releases, and partner summits.</div>
+      <a class="career-link" href="#contact">View Role →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <span class="section-eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+    <h2 class="section-title">You have questions.<br>We have answers.</h2>
+    <p class="section-body" style="margin-bottom:56px;">Everything you need to know before you apply, partner, or get involved — in plain language, no jargon.</p>
+    <div id="faq-list"></div>
+    <div class="faq-cta">
+      <div>
+        <p style="font-size:15px;font-weight:500;color:#0A1420;margin-bottom:4px;">Still have a question?</p>
+        <p style="font-size:14px;color:#5A7088;font-weight:300;">We read every message. Write to us directly and a real person will respond within 48 hours.</p>
+      </div>
+      <a href="#contact" style="background:#0F1D2F;color:#fff;padding:12px 24px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap;display:inline-block;">Write to Us →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact-section" id="contact">
+  <div class="contact-grid">
+    <div class="animate-on-scroll">
+      <span class="section-eyebrow">SEND US A MESSAGE</span>
+      <h2 class="section-title" style="margin-bottom:32px;">Let's build<br>together.</h2>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="contact-name">NAME</label>
+          <input type="text" id="contact-name" placeholder="Your full name" required>
+          <span class="form-error">Please enter your name.</span>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">EMAIL</label>
+          <input type="email" id="contact-email" placeholder="your@email.com" required>
+          <span class="form-error">Please enter a valid email address.</span>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">MESSAGE</label>
+          <textarea id="contact-message" placeholder="Tell us about yourself, your idea, or how you'd like to collaborate..." rows="6" required></textarea>
+          <span class="form-error">Please enter your message.</span>
+        </div>
+        <button type="submit" class="form-submit">Send Message →</button>
+      </form>
+    </div>
+
+    <div class="contact-info animate-on-scroll">
+      <span class="section-eyebrow">CONTACT INFORMATION</span>
+      <h3 class="section-title" style="font-size:28px;margin-bottom:24px;">We're here to help.</h3>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="contact-info-text">
+          <h4>Email</h4>
+          <p>info@netratvshaala.org</p>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="contact-info-text">
+          <h4>Location</h4>
+          <p>Uttar Pradesh, India<br>Operating nationally. Building globally.</p>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="contact-info-text">
+          <h4>Response Time</h4>
+          <p>We respond to every message within 48 hours. A real person will reply.</p>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="contact-info-text">
+          <h4>Looking to Partner?</h4>
+          <p>Government, corporate, foundation, or academic — we are actively seeking collaborators.</p>
+        </div>
+      </div>
+
+      <h4 style="font-family:'DM Mono',monospace;font-size:10px;color:var(--ink3);letter-spacing:2px;margin-top:32px;margin-bottom:12px;">FOLLOW US</h4>
+      <div class="contact-social">
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Netratvshaala&origin=ENTITY_SEARCH_HOME_HISTORY&heroEntityKey=urn%3Ali%3Aorganization%3A82633664&position=0" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://www.instagram.com/netratvshaala/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://www.facebook.com/Netratvshaala" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://x.com/netratvshaala" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section" id="newsletter" style="background:var(--cream);">
+  <div class="newsletter-inner animate-on-scroll">
+    <span class="section-eyebrow">STAY CONNECTED</span>
+    <h2 class="section-title">Join our newsletter.</h2>
+    <p class="section-body" style="text-align:center;">Get updates on programs, impact stories, and upcoming opportunities from Netratvshaala — delivered directly to your inbox.</p>
+    <form class="newsletter-form" id="newsletter-form-home">
+      <input type="email" placeholder="Your email address" required aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="cta">
+  <div class="cta-inner">
+    <div class="cta-text animate-on-scroll">
+      <span class="section-eyebrow">JOIN THE MISSION</span>
+      <h2>Ready to build <em>what comes next?</em></h2>
+      <p style="margin-top:20px;">Whether you are a founder with an idea, a government body with a problem, a funder with a conviction, or a leader in the making — Netratvshaala has a place for you. We are always building. Always open.</p>
+    </div>
+    <div class="cta-cards animate-on-scroll">
+      <a class="cta-card" href="#programs">
+        <div><div class="cta-card-l">Apply to the Startup Challenge</div><div class="cta-card-s">₹5 Crore fund · Open to early-stage founders</div></div>
+        <div class="cta-card-arrow">→</div>
+      </a>
+      <a class="cta-card" href="#programs">
+        <div><div class="cta-card-l">Explore All 6 Programs</div><div class="cta-card-s">AI, startups, governance, culture, soft power</div></div>
+        <div class="cta-card-arrow">→</div>
+      </a>
+      <a class="cta-card" href="#contact">
+        <div><div class="cta-card-l">Partner With Us</div><div class="cta-card-s">Government, corporate, foundation, or academic</div></div>
+        <div class="cta-card-arrow">→</div>
+      </a>
+      <a class="cta-card" href="#contact">
+        <div><div class="cta-card-l">Join the Mentor Network</div><div class="cta-card-s">Practitioners, officers, founders, and experts</div></div>
+        <div class="cta-card-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <p class="footer-sub" style="font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:16px;">Netratvsha<span style="color:var(--ga);">ala</span></p>
+      <p class="footer-sub">नेतृत्वशाला<br><br>Where leaders are forged. Where India leads the world.<br><br>Founded 2016, Uttar Pradesh.<br>Operating nationally. Building globally.<br><br>Leadership · Technology · Democracy</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Netratvshaala&origin=ENTITY_SEARCH_HOME_HISTORY&heroEntityKey=urn%3Ali%3Aorganization%3A82633664&position=0" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://www.instagram.com/netratvshaala/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://www.facebook.com/Netratvshaala" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://x.com/netratvshaala" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>PROGRAMS</h4>
+      <a href="#programs">Startup Challenge</a>
+      <a href="#programs">AI for MSME</a>
+      <a href="#programs">Deep Tech Leadership</a>
+      <a href="#programs">Yashoda AI</a>
+      <a href="#programs">Inclusive AI</a>
+      <a href="#programs">Sushma Swaraj Fellowship</a>
+    </div>
+    <div class="footer-col">
+      <h4>ORGANISATION</h4>
+      <a href="#about">About Us</a>
+      <a href="#journey">Our Journey</a>
+      <a href="#toc">Theory of Change</a>
+      <a href="#impact">Impact Reports</a>
+      <a href="#partners">Partners</a>
+      <a href="#mentors">Mentors &amp; Advisors</a>
+    </div>
+    <div class="footer-col">
+      <h4>CONNECT</h4>
+      <a href="#contact">Partner With Us</a>
+      <a href="#contact">Join Mentor Network</a>
+      <a href="#contact">Media &amp; Press</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact</a>
+      <a href="mailto:info@netratvshaala.org">info@netratvshaala.org</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Netratvshaala. All rights reserved. Leadership. Technology. Democracy.</p>
+    <span>netratvshaala.org</span>
+  </div>
+</footer>
+
+<!-- Supabase loaded deferred (not render-blocking) -->
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+/* ============================================================
+   NETRATVSHAALA — Single-Page Inlined JS
+   ============================================================ */
+
+// ---- SUPABASE CONFIGURATION ----
+var SUPABASE_URL = 'https://cqmolzmdvamlgvaaqjrp.supabase.co';
+var SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNxbW9sem1kdmFtbGd2YWFxanJwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3ODcwMTksImV4cCI6MjA5MjM2MzAxOX0.zYOibWeVg_21FbPkHR74kBRjVsXXoJSVqOiOsYET-qU';
+var sbClient = null;
+
+function getSbClient() {
+  if (sbClient) return sbClient;
+  try {
+    if (typeof supabase !== 'undefined' && supabase.createClient) {
+      sbClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    }
+  } catch (e) {
+    console.warn("Supabase initialization skipped:", e);
+  }
+  return sbClient;
+}
+
+// ---- FAQ DATA ----
+var faqData = [
+  {q:"What exactly is Netratvshaala? Is it an NGO, a startup accelerator, or a government body?",a:"None of the above — and a bit of all three. Netratvshaala is an independent leadership and innovation platform. We design and run programs in partnership with governments, institutions, and ecosystem leaders. We are not funded by any single government, we are not a for-profit accelerator, and we are not a think tank. We sit at the intersection — and that is precisely what makes us useful."},
+  {q:"Who can apply to your programs? Do I need to be from Uttar Pradesh?",a:"No. While we were founded in Uttar Pradesh and many of our early programs ran there, our work is now national. Founders, government officials, MSMEs, women entrepreneurs, researchers, content creators, and public leaders from any state can apply to our programs. Some programs have specific eligibility criteria — check the individual program page for details."},
+  {q:"How does the Startup Challenge work? How do I apply for the ₹5 Crore fund?",a:"The Startup Challenge is open to early and growth-stage founders solving hard problems in governance, health, agriculture, education, safety, or sustainability. Applications open in cohort cycles — typically twice a year. Selected teams go through a structured mentorship and pitch process before funding decisions are made. The fund is not a grant; it is an investment in the leader and the idea together. Sign up for our newsletter to be notified when the next cohort opens."},
+  {q:"What is Yashoda AI and how is Netratvshaala involved?",a:"Yashoda AI is India's first national AI literacy movement for women, launched by the National Commission for Women (NCW). Netratvshaala is a core implementation partner, helping design and deliver the program on the ground. So far, 5,539+ women have been trained across 17 states and union territories. It is one of our most active running programs — if you want to get involved as a trainer, partner, or participant, reach out to us directly."},
+  {q:"I am a government official or IAS officer. How can Netratvshaala work with my department?",a:"We have a dedicated track for public leaders — covering AI literacy, deepfake detection, digital safety, and governance in the age of AI. We have worked with UP Police and state government departments and are actively expanding these partnerships. The best first step is to write to us with a brief note about your department's needs and we will propose a tailored program."},
+  {q:"How is Netratvshaala different from other leadership programs in India?",a:"Three things set us apart. First, we work from the ground up — our roots are in tier-2 and tier-3 cities, not in conference rooms in Delhi or Mumbai. Second, we sit at the intersection of leadership, technology, and democracy — not just soft skills training. Third, we have real international recognition — from the UN Women AI Impact Summit to the Silver Polaris Award from Capital Media Group, London. We are a do tank, not a think tank."},
+  {q:"Is there a fee for your programs?",a:"It depends on the program and the audience. Some programs — especially those delivered in partnership with government bodies like Yashoda AI — are fully subsidised. Others, particularly corporate leadership programs and advisory tracks, are fee-based. The Startup Challenge, fellowships, and most grassroots programs are either free or heavily subsidised for eligible participants."},
+  {q:"Can corporates or foundations partner with or fund Netratvshaala?",a:"Yes — and we actively welcome it. We work with CSR partners, foundations, bilateral agencies, and impact investors who want their resources to go toward leadership development, AI literacy, women empowerment, or startup ecosystem building. We can co-design programs, co-fund initiatives, or structure a partnership that fits your CSR mandate. Reach out and we will put together a concept note."},
+  {q:"How do I apply for the Sushma Swaraj Memorial Content Creator Fellowship?",a:"The fellowship is open to content creators — across video, writing, podcast, or any digital format — who are telling India's story to the world. We look for depth, authenticity, and a genuine commitment to showcasing India's civilisational values, democratic strengths, and cultural richness. Applications open annually. Follow us on social media or sign up for our newsletter to be notified when applications open."},
+  {q:"I want to be a mentor or advisor. How do I get involved?",a:"We are actively building our mentor and advisory network — and we are looking for practitioners, not just titles. If you are an IAS officer, a technologist, a founder, a journalist, a diplomat, or a domain expert who believes in what we are doing, write to us with a brief note about yourself. We will take it from there."}
+];
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // ---- NAV SCROLL EFFECT ----
+  var nav = document.querySelector('nav');
+  if (nav) {
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          if (window.scrollY > 40) nav.classList.add('scrolled');
+          else nav.classList.remove('scrolled');
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  }
+
+  // ---- MOBILE HAMBURGER MENU ----
+  var hamburger = document.querySelector('.nav-hamburger');
+  var mobileNav = document.querySelector('.mobile-nav');
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', function () {
+      hamburger.classList.toggle('active');
+      mobileNav.classList.toggle('open');
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+    mobileNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        hamburger.classList.remove('active');
+        mobileNav.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // ---- SCROLL ANIMATIONS (Intersection Observer) ----
+  var animElements = document.querySelectorAll('.animate-on-scroll');
+  if (animElements.length > 0 && 'IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    animElements.forEach(function (el) { observer.observe(el); });
+  } else {
+    // Fallback: just show them
+    animElements.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  // ---- ACTIVE NAV LINK (scroll-spy for single page) ----
+  var navLinks = document.querySelectorAll('.nav-links a');
+  var sectionIds = ['hero','about','programs','partners','mentors','contact'];
+  if ('IntersectionObserver' in window && navLinks.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.id;
+          navLinks.forEach(function (l) {
+            if (l.getAttribute('href') === '#' + id) l.classList.add('active');
+            else l.classList.remove('active');
+          });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    sectionIds.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) spy.observe(el);
+    });
+  }
+
+  // ---- FAQ ACCORDION ----
+  var faqList = document.getElementById('faq-list');
+  if (faqList) {
+    faqData.forEach(function (f, i) {
+      var item = document.createElement('div');
+      item.className = 'faq-item';
+      item.innerHTML =
+        '<button class="faq-btn" aria-expanded="false" aria-controls="ans-' + i + '">' +
+          '<span class="faq-q">' + f.q + '</span>' +
+          '<span class="faq-icon" aria-hidden="true">' +
+            '<svg width="12" height="12" viewBox="0 0 12 12" fill="none">' +
+              '<line x1="6" y1="0" x2="6" y2="12" stroke="#0F1D2F" stroke-width="1.5"/>' +
+              '<line x1="0" y1="6" x2="12" y2="6" stroke="#0F1D2F" stroke-width="1.5"/>' +
+            '</svg>' +
+          '</span>' +
+        '</button>' +
+        '<div class="faq-answer" id="ans-' + i + '" role="region">' +
+          '<div class="faq-answer-inner">' + f.a + '</div>' +
+        '</div>';
+      var btn = item.querySelector('.faq-btn');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-btn').setAttribute('aria-expanded','false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded','true');
+        }
+      });
+      faqList.appendChild(item);
+    });
+    if (faqList.firstChild) {
+      faqList.firstChild.classList.add('open');
+      faqList.firstChild.querySelector('.faq-btn').setAttribute('aria-expanded','true');
+    }
+  }
+
+  // ---- TOAST NOTIFICATION ----
+  function showToast(message) {
+    var existing = document.querySelector('.form-toast');
+    if (existing) existing.remove();
+    var toast = document.createElement('div');
+    toast.className = 'form-toast success show';
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    setTimeout(function () {
+      toast.classList.remove('show');
+      setTimeout(function () { toast.remove(); }, 400);
+    }, 4000);
+  }
+
+  // ---- CONTACT FORM ----
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    var submitBtn = contactForm.querySelector('.form-submit');
+    var originalBtnText = submitBtn ? submitBtn.innerHTML : 'Send Message →';
+
+    contactForm.querySelectorAll('input, textarea').forEach(function (input) {
+      input.addEventListener('input', function () {
+        input.classList.remove('error');
+        var group = input.closest('.form-group');
+        if (group) group.classList.remove('has-error');
+      });
+    });
+
+    contactForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var valid = true;
+      var nameField = document.getElementById('contact-name');
+      var emailField = document.getElementById('contact-email');
+      var msgField = document.getElementById('contact-message');
+
+      [nameField, emailField, msgField].forEach(function (f) {
+        if (!f) return;
+        f.classList.remove('error');
+        var group = f.closest('.form-group');
+        if (group) group.classList.remove('has-error');
+      });
+
+      if (!nameField.value.trim()) {
+        nameField.classList.add('error');
+        nameField.closest('.form-group').classList.add('has-error');
+        valid = false;
+      }
+      if (!emailField.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value)) {
+        emailField.classList.add('error');
+        emailField.closest('.form-group').classList.add('has-error');
+        valid = false;
+      }
+      if (!msgField.value.trim()) {
+        msgField.classList.add('error');
+        msgField.closest('.form-group').classList.add('has-error');
+        valid = false;
+      }
+
+      if (valid) {
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="loader"></span> Sending...';
+          submitBtn.style.opacity = '0.7';
+        }
+        var formData = {
+          name: nameField.value.trim(),
+          email: emailField.value.trim(),
+          message: msgField.value.trim(),
+          created_at: new Date().toISOString()
+        };
+
+        var client = getSbClient();
+        if (client) {
+          try {
+            var res = await client.from('contact_messages').insert([formData]);
+            if (res.error) throw res.error;
+            handleSuccess(contactForm, submitBtn, originalBtnText, "Thank you! Your message has been received. We'll get back to you within 48 hours.");
+          } catch (err) {
+            console.error("Supabase Error:", err);
+            showToast('Unable to send right now. Please email info@netratvshaala.org.');
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalBtnText;
+              submitBtn.style.opacity = '1';
+            }
+          }
+        } else {
+          setTimeout(function () {
+            handleSuccess(contactForm, submitBtn, originalBtnText, "Thank you! Your message has been received. We'll get back to you within 48 hours.");
+          }, 1200);
+        }
+      } else {
+        var firstError = contactForm.querySelector('.error');
+        if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  }
+
+  function handleSuccess(form, btn, originalText, toastMsg) {
+    showToast(toastMsg);
+    form.reset();
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = originalText;
+      btn.style.opacity = '1';
+    }
+    var formContainer = form.parentElement;
+    if (formContainer) {
+      var successMsg = document.createElement('div');
+      successMsg.className = 'form-success-message';
+      successMsg.style.padding = '40px';
+      successMsg.style.background = 'var(--cream)';
+      successMsg.style.borderLeft = '4px solid var(--ga)';
+      successMsg.style.borderRadius = 'var(--radius)';
+      successMsg.innerHTML = '<h3 style="margin-bottom:12px; color:var(--ink);">Message Sent!</h3><p style="color:var(--ink2);">We have received your message and our team will get back to you shortly. Thank you for reaching out to Netratvshaala.</p>';
+      form.style.display = 'none';
+      formContainer.appendChild(successMsg);
+    }
+  }
+
+  // ---- NEWSLETTER FORM ----
+  var nlForms = document.querySelectorAll('.newsletter-form');
+  nlForms.forEach(function (form) {
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var emailInput = form.querySelector('input[type="email"]');
+      var submitBtn = form.querySelector('button');
+      var originalText = submitBtn ? submitBtn.textContent : 'Subscribe';
+
+      if (emailInput && emailInput.value.trim() && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '...'; }
+        var email = emailInput.value.trim();
+        var client = getSbClient();
+        if (client) {
+          try {
+            var res = await client.from('newsletter_subscribers').insert([{ email: email, created_at: new Date().toISOString() }]);
+            if (res.error) throw res.error;
+            showToast("You're subscribed! Watch your inbox for updates from Netratvshaala.");
+          } catch (err) {
+            console.error("Supabase Error:", err);
+            showToast('Subscription failed. Please try again later.');
+          }
+        } else {
+          await new Promise(function (r) { setTimeout(r, 800); });
+          showToast("You're subscribed! Watch your inbox for updates from Netratvshaala.");
+        }
+        emailInput.value = '';
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+      } else {
+        showToast('Please enter a valid email address.');
+      }
+    });
+  });
+
+});
+</script>
+</body>
+</html>
